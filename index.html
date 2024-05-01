@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada Visa Checking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Government of Visa Logo">
+            <span>Government of Visa</span>
+        </div>
+        <h1>Canada Visa Checking</h1>
+    </header>
+    <main>
+        <form>
+            <label for="idTypeInput">Identification Type:</label>
+            <input type="text" id="idTypeInput" placeholder="Identification Type">
+            <br>
+            <label for="passportNumberInput">Passport Number:</label>
+            <input type="text" id="passportNumberInput" placeholder="Passport Number">
+            <br>
+            <label for="surnameInput">Surname/Family Name:</label>
+            <input type="text" id="surnameInput" placeholder="Surname/Family Name">
+            <br>
+            <label for="dobInput">Date of Birth:</label>
+            <input type="text" id="dobInput" placeholder="Date of Birth">
+            <br>
+            <label for="pobInput">Place of Birth:</label>
+            <input type="text" id="pobInput" placeholder="Place of Birth">
+            <br>
+            <button type="button" onclick="showVisa()">Show Visa</button>
+            <button class="pdf-button" id="pdfButton" onclick="showPdf()">Show PDF</button>
+        </form>
+        <div class="message" id="message"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Government of Canada. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
